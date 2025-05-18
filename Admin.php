@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
 <body>
 
     <div>
-        <div>
+        <div class="administração">
             <form method="post">
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" id="senha" required placeholder="Digite a senha"> <br>
@@ -41,16 +41,16 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
                     <span></span>CONCLUIR OPERAÇÃO       
                 </button>
             </form>
-        <div>
-    <div class="dados">
+</div>
+    <div class="agenda">
             <?php if(isset($result) && $result->num_rows >0) : ?> 
-                <h2 style="text-align:center">Dados</h2>
+                <h2 style="text-align:center">Agenda</h2>
                 <ul>
                     <?php while($row = $result->fetch_assoc()) : ?>
                         <li>
                             <strong>Nome: </strong> <?php echo $row["nome"]; ?><br>
                             <strong>email: </strong> <?php echo $row["email"]; ?><br>
-                            <strong>mensagem: </strong> <?php echo $row["mensagem"]; ?><br>
+                            <strong>agendamento: </strong> <?php echo $row["agendamento"]; ?><br>
                             <strong>Data e Hora: </strong> <?php echo $row["data"]." às ".$row["hora"]; ?><br><br>
                     </li>
                     <?php endwhile; ?>
@@ -58,10 +58,11 @@ if($_SERVER["REQUEST_METHOD"]== "POST"){
                 <?php else : ?>
                     <p>Nenhum agendamento encontrado. </p>
                     <?php endif; ?>
+    </div>
                     
                     <a href="index.html">Voltar</a>
                     
-
+                    <script src="app.js"></script>
 </body>
 
 </html>

@@ -194,3 +194,62 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+.Portifólio {
+    font-size: 30px;
+    color: rgb(2, 165, 29);
+    margin: 1px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid black;
+    height: 100vh;
+    margin-top: 5px;
+}
+
+.contatos {
+    font-size: 25px;
+    color: rgb(2, 165, 29);
+    margin: 1px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid black;
+    height: 40vh;
+    margin-top: 5px;
+}
+
+.Agendamento {
+    font-size: 25px;
+    color: rgb(2, 165, 29);
+    margin: 1px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid black;
+    height: 40vh;
+    margin-top: 5px;
+}
+
+.administração {
+    font-size: 35px;
+    color: rgb(2, 165, 29);
+    margin: 1px;
+    padding: 0px;
+    text-align: center;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid black;
+    height: 40vh;
+    margin-top: 5px;
+}
+
+.agenda {
+    font-size: 20px;
+    color: rgb(2, 165, 29);
+    margin: 1px;
+    padding: 0px;
+    text-align: left;
+    background-color: rgb(207, 207, 207);
+    border: 1px solid black;
+    margin-top: 5px;
+}
